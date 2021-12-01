@@ -1,5 +1,6 @@
 package com.example.airplane_service.dto;
 
+import com.example.airplane_service.enums.FlightStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class FlightDto {
     private Integer id;
-    private String flightStatus;
+    private FlightStatus flightStatus;
     private String departureCountry;
     private String destinationCountry;
     private Double distance;
